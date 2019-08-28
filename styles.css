@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+body {
+  font-family: Russo One;
+  text-align: center;
+}
+#drum-machine {
+  display: grid;
+  width: 50%;
+  grid-template-columns: 1fr 1fr;
+  border:10px solid gray;
+  justify-items: space-between;
+  position: absolute;
+  top:30%;
+  left: 20%;
+  padding:20px;
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3em;
+
+}
+
+#functions{
+
+  display:grid;
+  grid-template-columns: 1fr ;
+  grid-gap: 3em;
+  justify-items: end;
+
+}
+
+.fa-power-off{
+  color:green;
+}
+
+#display{
+  border:1px solid black;
+  height:20px;
+  width:100px;
+
+ 
+}
+
+button{
+  display: block;
+  width: 3em;
+  height: 3em;
+  font-weight: 500;
+  font-size: 2em;
+  box-shadow: black 3px 3px 5px;
+
+  
+}
+
+#volume > i{
+  margin-left : 4px;
+}
