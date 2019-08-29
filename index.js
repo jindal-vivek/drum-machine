@@ -120,7 +120,7 @@ window.onload = function () {
   changeBank(bank1);
 
   //add a event listener to whole div of buttons and play respective DrumPad
-  document.querySelector(".drum-pad").addEventListener("click", function (event) {
+  document.querySelector("#buttons").addEventListener("click", function (event) {
     if (event.target.tagName === "BUTTON" && power) {
       document.getElementById(event.target.innerHTML).play();
       console.log(event.target.parentNode.id.replace("-", " "))
