@@ -121,6 +121,7 @@ window.onload = function () {
 
   //add a event listener to whole div of buttons and play respective DrumPad
   document.querySelector("#buttons").addEventListener("click", function (event) {
+    console.log(event.target)
     if (event.target.tagName === "BUTTON" && power) {
       document.getElementById(event.target.innerHTML).play();
       console.log(event.target.parentNode.id.replace("-", " "))
